@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #eee5df;
+    font-family: "Rubik", sans-serif;
+}
+
+.product-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-section p{
+    background-color: #f4e4da;
+    padding: 3px;
+}
+
+.product-price{
+    font-weight: 600;
+    color: #fc8a44;
+    margin-bottom: 70px;
+}
+
+.product{
+    background-color: #f4e4da;
+    margin: 8px;
+    padding: 10px;
+    width: calc(18% - 20px);
+    border: 1.5px solid #FF914D;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.product-image{
+    background-color: #f4e4da;
+    width: 150px;
+    height: 150px;
+}
+
+.product-button{
+    position: absolute;
+    bottom: 0;
+    margin: 15px;
+    width: fit-content;
+    border: 1.5px solid #FF914D;
+    padding: 14px 50px;
+    border-radius: 15px;
+    color: #FF914D;
+    background-color: #f4e4da;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.product-button:hover{
+    background-color: #FF914D;
+    color: #FFFFFF;
+    transition: 0.4s;
+}
+
+.product-title{
+    display: flex;
+    padding: 30px 80px 20px 80px;
+    color: #7a6255;
+    font-weight: 700;
+}
+
