@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+/*Style Principal*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fceadd;
     font-family: "Rubik", sans-serif;
+}
+
+body{
+    background-color: #fceadd;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
 }
 
 .product-section{
@@ -53,10 +62,11 @@
     border: 1.5px solid #FF914D;
     padding: 14px 50px;
     border-radius: 15px;
-    color: #FF914D;
     background-color: #fceadd;
     font-weight: 500;
     font-size: 16px;
+    color: #FF914D;
+    text-decoration: none;
 }
 
 .product-button:hover{
@@ -68,7 +78,7 @@
 .product-title{
     display: flex;
     padding: 30px 80px 20px 80px;
-    color: #FF914D;
+    color: #214C39;
     font-weight: 600;
     font-size: 30px;
 }
@@ -116,10 +126,254 @@
 
 .review-title{
     padding: 40px 80px 20px 80px;
-    color: #FF914D;
+    color: #214C39;
     font-weight: 600;   
     font-size: 30px; 
 }
 
 
 
+/*Style Cadastro*/
+.register-login{
+    align-items: center;    
+}
+
+.container{
+    width: 80%;
+    height: 80vh;  
+    display: flex;  
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.form-image{
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff914dc5;   
+    padding: 20px;
+}
+
+.form-image img{
+    width: 500px;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;  
+    padding: 50px; 
+    position: relative;
+}
+
+.logo-register-login{
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: inline-block;
+}
+
+.logo-register-login img{
+    width: 200px;
+}
+
+.form-header{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;   
+}
+
+.login-button button{
+    border: none;
+    background-color: #FF914D;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.login-button button:hover{
+    background-color: #ff914dc5;    
+}
+
+.login-button button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.form-header h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 5px;
+    background-color: #FF914D;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-box input{
+    margin: 10px 0;
+    padding: 15px 22px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover{
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible{
+    outline: 1.5px solid #FF914D;
+}
+
+.input-box label{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.input-box input::placeholder{
+    color: #000000be;
+}
+
+.form-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-button button{
+    width: 50%;
+    margin-top: 40px;
+    border: none;
+    background-color: #FF914D;
+    padding: 14px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form-button button:hover{
+    background-color: #ff914dc5;
+}
+
+.form-button button a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1300px) {
+    .form-image{
+        display: none;
+    }
+
+    .container{
+        width: 50%;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .logo-register-login img{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .container{
+        width: 90%;
+        height: 70vh;
+    }
+
+    .logo-register-login img{
+        width: 140px;
+    }
+
+    .form-header h1{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .login-button button{
+        padding: 8px 18px;
+    }
+
+    .login-button button a{
+        font-size: 14px;
+    }
+
+    .input-group{
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 60px;
+        padding-left: 10px;
+        max-height: 160px;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .input-box label{
+        font-size: 14px;
+    }
+
+    .form-button button{
+        margin-top: 50px;
+        padding: 13px;
+    }
+
+    .form-button button a{
+        font-size: 14px;
+    }
+}
+
+
+
+/*Style Login*/
+.input-group-login{
+    padding: 16px 0;
+}
+
+.option-register{
+    margin-top: 20px;
+}
+
+.option-register p{
+    font-size: 14px;
+}
+
+.option-register p a{
+    color: #FF914D;
+    font-weight: 500;
+}
