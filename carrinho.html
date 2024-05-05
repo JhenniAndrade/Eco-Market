@@ -11,6 +11,254 @@
     <title>Eco Market</title>
 </head>
 <body>
-    
+    <header class="header" id="header">
+        <section class="logo_header">
+            <a href="#">
+                <h1>Eco Market</h1>
+            </a>
+        </section>
+        <nav class="nagivation_header" id="nav">
+            <a href="#products">Produtos</a>
+            <a href="#review">Avaliações</a>
+            <a href="#">Educação</a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <main>
+        <header class="product-header">
+            <h1 class="product-title-page">Seu pedido</h1>
+        </header>
+        <section class="cart-products">
+            <article class="cart-article">
+                <header class="cart-header">
+                    <h4>Produto</h4>
+                    <h4>Preço</h4>
+                    <h4>Quantidade</h4>
+                    <h4>Total</h4>
+                </header>
+                <article class="cart-product">
+                    <section class="product-item">
+                        <img src="images/frutas/maca.png" alt="imagem maçã">
+                        <p>Maçã 1Kg</p>
+                    </section>
+                    <p>R$ 6,50</p>
+                    <section class="trash-add">
+                        <i class="fa-solid fa-trash"></i>
+                        <p>2</p>
+                        <i class="fa-solid fa-plus"></i>    
+                    </section>
+                    <p>R$ 13,00</p>
+                </article>
+            </article>
+        </section>
+        <section class="cart-container">
+            <section class="cart-section">
+                <header class="headers">
+                    <h2>Dados pessoais</h2>
+                </header>
+                <form action="#">
+                    <article class="input-box-cart">
+                        <label for="firstname">Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Primeiro nome" required>
+                    </article>  
+                    <article class="input-box-cart">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Sobrenome" required>
+                    </article>
+                    <article class="input-box-cart">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+                    </article> 
+                    <article class="input-box-cart">
+                        <label for="phone">Telefone</label>
+                        <input id="phone" type="tel" name="phone" placeholder="(xx) xxxxx-xxxx" required>
+                    </article> 
+                    <article class="input-box-cart">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="seu@email.com" required>
+                    </article>    
+                </form>
+            </section>
+            <section class="cart-section">
+                <header class="headers">
+                    <h2>Entrega</h2>
+                </header>
+                <form action="#">
+                    <article class="input-box-cart">
+                        <label for="cep">CEP</label>
+                        <input id="cep" type="text" name="cep" placeholder="xxxxxx-xxx" required>
+                    </article> 
+                    <article class="input-box-cart">
+                        <label for="address">Endereço</label>
+                        <input id="address" type="text" name="address" placeholder="Endereço" required>
+                    </article> 
+                    <article class="input-box-cart">
+                        <label for="number">Número</label>
+                        <input id="number" type="number" name="number" placeholder="Número do endereço" required>
+                    </article> 
+                    <article class="input-box-cart">
+                        <label for="complement">Complemento</label>
+                        <input id="complement" type="text" name="complement" placeholder="Complemento">
+                    </article> 
+                    <article class="input-box-cart">
+                        <label for="neighborhood">Bairro</label>
+                        <input id="neighborhood" type="text" name="neighborhood" placeholder="Bairro" required>
+                    </article> 
+                    <article class="input-box-cart">
+                        <label for="city">Cidade</label>
+                        <input id="city" type="text" name="city" placeholder="Cidade" required>
+                    </article> 
+                    <article class="input-box-cart">
+                        <label for="state">Estado</label>
+                        <input id="state" type="text" name="state" placeholder="Estado" required>
+                    </article> 
+                    <article class="input-box-cart">
+                        <label for="addresse">Destinatário</label>
+                        <input id="addresse" type="text" name="addresse" placeholder="Nome do destinatário" required>
+                    </article> 
+                </form>
+            </section>
+            <section class="cart-section">
+                <header class="headers">
+                    <h2>Pagamento</h2>
+                </header>
+                <form action="#">
+                    <p class="pay-p">Escolha a forma de pagamento</p>
+                    <section class="pay">
+                        <input class="input-pay" id="credit-card" type="radio" name="pay" value="Cartao de credito" checked>
+                        <label class="label-pay" for="credit-card">Cartão de crédito</label>
+                        <br>
+                        <br>
+                        <br>
+                        <form action="#">
+                            <article class="input-box-cart">
+                                <label for="card-name">Nome no cartão</label>
+                                <input id="card-name" type="text" name="card-name" placeholder="nome c exemplo" required>
+                            </article>  
+                            <article class="input-box-cart">
+                                <label for="card-number">Número do cartão</label>
+                                <input id="card-number" type="text" name="card-number" placeholder="xxxx xxxx xxxx xxxx" required>
+                            </article> 
+                            <article class="input-box-cart">
+                                <label for="vigor">Validade do cartão</label>
+                                <input id="vigor" type="date" name="vigor" required>
+                            </article> 
+                            <article class="input-box-cart">
+                                <label for="security-code">Código de segurança do cartão</label>
+                                <input id="security-code" type="number" name="security-code" placeholder="CVV" required>
+                            </article>      
+                        </form>
+                        <br>
+                        <input class="input-pay" id="pix" type="radio" name="pay" value="Pix">
+                        <label class="label-pay" for="pix">Pix</label>
+                        <br>
+                        <br>
+                        <input class="input-pay" id="bank-slip" type="radio" name="pay" value="Boleto">
+                        <label class="label-pay" for="bank-slip">Boleto Bancário</label>
+                    </section>
+                </form>
+            </section>
+            <section class="discount-resume">
+                <section class="cart-section">
+                    <header class="headers">
+                        <h2>Cupom de desconto</h2>
+                    </header>
+                    <section class="discount-section">
+                        <input id="discount" type="text" name="discount" placeholder="Código do cupom">
+                        <button><a href="#">Aplicar</a></button>
+                    </section>
+                </section>
+                <section class="cart-section">
+                    <header class="headers">
+                        <h2>Resumo do pedido</h2>
+                    </header>
+                    <section class="resume">
+                        <p>Produtos</p>
+                        <p>R$ 13,00</p>
+                    </section>
+                    <section class="resume">
+                        <p>Entrega</p>
+                        <p>R$ 12,90</p>
+                    </section>
+                    <section class="resume-total">
+                        <p>Total</p>
+                        <p>R$ 25,90</p>
+                    </section>
+                    <button class="resume-botton"><a href="#">Finalizar compra</a></button>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section id="footer_content">
+            <section id="footer_contacts">
+                <h2>Eco Market</h2>
+                <p>Sua escolha mais sustentável.</p>
+                <section id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </section>
+            </section>
+            <section id="footer_products">
+                <ul class="footer-list">
+                    <li>
+                        <h3>Produtos</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Verduras</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Legumes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Condimentos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Frutas</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Extras</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="footer_info">
+                <ul class="footer-list">
+                    <li>
+                        <h3>Saiba mais</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Avaliações</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Educação</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="footer_subscribe">
+                <h3>Inscrever-se</h3>
+                <p>
+                    Insira seu e-mail para receber notificações sobre nossas novas soluções.
+                </p>
+                <section id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </section>
+            </section>
+        </section>
+        <section id="footer_copyright">
+            &#169
+            2024 all rights reserved.
+        </section>
+    </footer>
 </body>
 </html>
