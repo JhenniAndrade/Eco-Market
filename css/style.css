@@ -148,7 +148,7 @@ main{
 
 .product-title{
     display: flex;
-    padding: 40px 80px 20px 80px;
+    padding: 70px 80px 20px 80px;
     color: #214C39;
     font-weight: 600;
     font-size: 30px;
@@ -204,7 +204,7 @@ main{
 }
 
 .review-title{
-    padding: 50px 80px 20px 80px;
+    padding: 80px 80px 20px 80px;
     color: #214C39;
     font-weight: 600;   
     font-size: 30px; 
@@ -267,14 +267,14 @@ main{
 }
 
 .education-title{
-    padding: 50px 80px 20px 80px;
+    padding: 70px 80px 20px 80px;
     color: #214C39;
     font-weight: 600;   
     font-size: 30px; 
 }
 
 footer{
-    margin-top: 30px;
+    margin-top: auto;
     background-color:#12623e;
     width: 100%;
     color: #FFFFFF;
