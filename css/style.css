@@ -21,12 +21,11 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;
-    /*align-items: center;*/
 }
 
 main{
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 60px;
 }
 
 .header{
@@ -53,13 +52,6 @@ main{
     color: #FF914D;
 }
 
-/*.header,
-.nagivation_header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}*/
-
 .nagivation_header{
     display: flex;
     gap: 3rem;
@@ -75,14 +67,6 @@ main{
 .nagivation_header a:hover{
     color: #FF914D;
 }
-
-/*.btn_icon_header{
-    display: none;
-    background-color: transparent;
-    border: none;
-    color: #FFFFFF;
-    cursor: pointer;
-}*/
 
 .banner{
     width: 100%;
@@ -136,7 +120,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*position: relative;*/
 }
 
 .product-image{
@@ -146,9 +129,6 @@ main{
 }
 
 .product-button{
-    /*position: absolute;*/
-    /*bottom: 0;
-    margin: 15px;*/
     width: fit-content;
     border: 1.5px solid #FF914D;
     padding: 14px 50px;
@@ -262,12 +242,12 @@ main{
     justify-content: start;
     align-items: center;
     width: 300px;
-    height: 300px;
+    height: 350px;
 }
 
 .education-image{
     width: 250px;
-    height: 130px;
+    height: 150px;
     background-color: #FF914D;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -298,6 +278,7 @@ footer{
     background-color:#12623e;
     width: 100%;
     color: #FFFFFF;
+    box-sizing: border-box;
 }
 
 .footer-link{
@@ -432,19 +413,169 @@ footer{
     font-weight: 500;
 }
 
-@media screen and (max-widht: 768px){
-    #footer_content{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+@media (max-width: 1360px){
+    .product-image{
+        width: 120px;
+        height: 120px;
+    }
+
+    .product-section p{
+        text-align: center;
+    }
+
+    .product-price{
+        margin-bottom: 70px;
+    }
+
+    .product-button{
+        bottom: 10px;  
+    }
+
+    .education-card{
+        width: 250px;
+        height: 300px;
+    }
+
+    .education-image{
+        width: 200px;
+        height: 120px;
+    }
+
+    .education-name{
+        font-size: 18px;
+    }
+
+    .education-p{
+        font-size: 12px;
     }
 }
 
-@media screen and (max-widht: 426px){
-    #footer_content{
-        grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 2rem;
+@media (max-width: 1230px){
+    .product-button{
+        padding: 15px 30px;
+    }       
+}
+
+@media (max-width: 1150px){
+    .review-card{
+        width: 300px;
+    }
+
+    .education-card{
+        width: 200px;
+        height: 250px;
+    }
+
+    .education-image{
+        width: 150px;
+        height: 80px;
+    }
+
+    .education-name{
+        font-size: 16px;
+    }
+
+    .education-p{
+        font-size: 12px;
+    }    
+}
+
+@media (max-width: 1000px){
+    .product-price{
+        margin-bottom: 40px;
+    }
+
+    .product-button{
+        padding: 10px 25px;
+        font-size: 14px;
+    } 
+
+    .review-card{
+        width: 250px;
+    }    
+}
+
+@media (max-width: 900px){
+    .nagivation_header{
+        gap: 1.5rem;
+    }
+
+    .product-image{
+        width: 90px;
+        height: 90px;
+    }    
+
+    .product-price{
+        margin-bottom: 30px;
+    }
+
+    .product-button{
+        padding: 5px 20px; 
+        font-size: 12px;
+    }
+
+    .review-image{
+        display: none;
+    } 
+
+    .review-card{
+        width: 200px;
+        text-align: center;
+    }
+
+    .education-card{
+        width: 150px;
+        height: 200px;
+    }
+
+    .education-image{
+        display: none;
     }
 }
+
+@media (max-width: 750px){
+    main{
+        padding-top: 60px;
+    }
+
+    .nagivation_header{
+        gap: 0.8rem;
+    }   
+    
+    .banner{
+        display: none;
+    }
+
+    .product-title{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 360px){
+    .header{
+        padding: 0 5%;
+    }
+    .logo_header a{
+        font-size: 12px;
+    } 
+    
+    .nagivation_header{
+        gap: 0.8rem;
+        font-size: 12px;
+    } 
+
+    .product-header, .product-section, .review, .education{
+        flex-direction: column;
+    }
+
+    .footer_contents{
+        display: none;
+    }
+
+}
+
+
+
 
 /*Style Cadastro e Login*/
 .register-login{
@@ -677,6 +808,7 @@ footer{
         font-size: 14px;
     }
 }
+
 
 
 
@@ -922,6 +1054,38 @@ input[type="radio"]{
     font-size: 14px;
     font-weight: 500;    
 }
+
+@media (max-width: 1500px){
+    .cart-section{
+        flex: 1 0 30%;
+    }    
+
+    .discount-resume{
+        display: flex;
+    }
+}
+
+@media (max-width: 1000px){
+    .product-title-page{
+        font-size: 26px;
+    }
+
+    .cart-header h4{
+        font-size: 14px;
+    }
+
+    .cart-product p{
+        font-size: 12px;
+    }
+}
+
+@media (min-width:360px) and (max-width: 1000px){
+    .product-title-page{
+        padding-top: 40px;
+    }    
+}
+
+
 
 
 
