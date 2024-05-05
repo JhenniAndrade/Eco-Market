@@ -213,6 +213,68 @@ main{
     font-size: 30px; 
 }
 
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin-top: 20px;   
+}
+
+.education-link{
+    text-decoration: none;
+}
+
+.education-link{
+    color: #000000;
+    transition: all 0.4s;
+}
+
+.education-link:hover{
+    color: #004a29;
+}
+
+.education-card{
+    background-color: #FF914D;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+.education-image{
+    width: 250px;
+    height: 130px;
+    background-color: #FF914D;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.education-name{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    background-color: #FF914D;    
+}
+
+.education-p{
+    font-size: 15px;
+    background-color: #FF914D;
+    text-align: center;
+}
+
+.education-title{
+    padding: 50px 80px 20px 80px;
+    color: #214C39;
+    font-weight: 600;   
+    font-size: 30px; 
+}
+
 footer{
     margin-top: 2rem;
     background-color:#12623e;
@@ -365,9 +427,6 @@ footer{
         padding: 3rem 2rem;
     }
 }
-
-
-
 
 /*Style Cadastro e Login*/
 .register-login{
