@@ -8,18 +8,37 @@
     font-family: "Rubik", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F8F6F4;
+    width: 100%;
+    height: 100vh;
+    /*display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+main{
+    padding: 63px 0;
+}
+
 .header{
     display: flex;
     flex-direction: row;
     background-color: #12623e;
+    position: fixed;
+    width: 100%;
     color: #FFFFFF;
     align-items: center;
-    height: 3.5rem;
+    height: 4rem;
     justify-content: space-between;
     padding: 0 10%;
 }
 
-.logo_header a {
+.logo_header a{
     text-decoration: none;
     color: #FFFFFF;
     transition: all 0.4s;
@@ -30,14 +49,15 @@
     color: #FF914D;
 }
 
-.header,
+/*.header,
 .nagivation_header{
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+}*/
 
 .nagivation_header{
+    display: flex;
     gap: 3rem;
 }
 
@@ -52,21 +72,31 @@
     color: #FF914D;
 }
 
-.btn_icon_header{
+/*.btn_icon_header{
     display: none;
     background-color: transparent;
     border: none;
     color: #FFFFFF;
     cursor: pointer;
+}*/
+
+.product-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-body{
-    background-color: #fceadd;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    /*align-items: center;*/
+.product-header a{
+    padding-right: 150px;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #ff9807;
+}
+
+.product-header a:hover{
+    color: #214C39;
+    font-size: 16.2px;
 }
 
 .product-section{
@@ -76,18 +106,18 @@ body{
 }
 
 .product-section p{
-    background-color: #fceadd;
+    background-color: #FFFFFF;
     padding: 3px;
 }
 
 .product-price{
     font-weight: 700;
-    color: #000000;
-    margin-bottom: 70px;
+    color: #FF914D;
+    margin-bottom: 40px;
 }
 
 .product{
-    background-color: #fceadd;
+    background-color: #FFFFFF;
     margin: 8px;
     padding: 10px;
     width: calc(18% - 20px);
@@ -97,24 +127,24 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    /*position: relative;*/
 }
 
 .product-image{
-    background-color: #fceadd;
+    background-color: #FFFFFF;
     width: 150px;
     height: 150px;
 }
 
 .product-button{
-    position: absolute;
-    bottom: 0;
-    margin: 15px;
+    /*position: absolute;*/
+    /*bottom: 0;
+    margin: 15px;*/
     width: fit-content;
     border: 1.5px solid #FF914D;
     padding: 14px 50px;
     border-radius: 15px;
-    background-color: #fceadd;
+    background-color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
     color: #FF914D;
@@ -129,7 +159,7 @@ body{
 
 .product-title{
     display: flex;
-    padding: 30px 80px 20px 80px;
+    padding: 40px 80px 20px 80px;
     color: #214C39;
     font-weight: 600;
     font-size: 30px;
@@ -177,16 +207,172 @@ body{
 }
 
 .review-title{
-    padding: 40px 80px 20px 80px;
+    padding: 50px 80px 20px 80px;
     color: #214C39;
     font-weight: 600;   
     font-size: 30px; 
 }
 
+footer{
+    margin-top: 2rem;
+    background-color:#12623e;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+#footer_content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2.5rem 3.5rem;
+}
+
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    transition: all 0.4s;
+    color: #FFFFFF;
+}
+
+#footer_social_media .footer-link i{
+    font-size: 1.25rem;
+} 
+    
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook{
+    background-color: #4267b3;
+}
+
+#whatsapp{
+    background-color: #25d366;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+    color: #FFFFFF;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover{
+    color: #FF914D;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: #FFFFFF;
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: #004a29;
+    border-radius: 4px;
+}
+
+#input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button{
+    background-color:#FF914D;
+    border: none;
+    color: #FFFFFF;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover{
+    opacity: 0.8;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: #ff914dc5;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+.input-group-login{
+    padding: 16px 0;
+}
+
+.option-register{
+    margin-top: 20px;
+}
+
+.option-register p{
+    font-size: 14px;
+}
+
+.option-register p a{
+    color: #FF914D;
+    font-weight: 500;
+}
+
+@media screen and (max-widht: 768px){
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-widht: 426px){
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
 
 
-/*Style Cadastro*/
+
+
+/*Style Cadastro e Login*/
 .register-login{
+    display: flex;
+    justify-content: center;
     align-items: center;    
 }
 
@@ -195,7 +381,9 @@ body{
     height: 80vh;  
     display: flex;  
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    padding: 0;
 }
+
 
 .form-image{
     width: 50%; 
@@ -410,156 +598,4 @@ body{
     }
 }
 
-footer{
-    margin-top: 2rem;
-    background-color:#12623e;
-    width: 100%;
-    color: #FFFFFF;
-}
 
-.footer-link{
-    text-decoration: none;
-}
-
-#footer_content{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
-}
-
-#footer_contacts h1{
-    margin-bottom: 0.75rem;
-}
-
-#footer_social_media{
-    display: flex;
-    gap: 2rem;
-    margin-top: 1.5rem;
-}
-
-#footer_social_media .footer-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
-    border-radius: 50%;
-    transition: all 0.4s;
-    color: #FFFFFF;
-}
-
-#footer_social_media .footer-link i{
-    font-size: 1.25rem;
-} 
-    
-#footer_social_media .footer-link:hover{
-    opacity: 0.8;
-}
-
-#instagram{
-    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
-}
-
-#facebook{
-    background-color: #4267b3;
-}
-
-#whatsapp{
-    background-color: #25d366;
-}
-
-.footer-list{
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    list-style: none;
-}
-
-.footer-list .footer-link{
-    color: #FFFFFF;
-    transition: all 0.4s;
-}
-
-.footer-list .footer-link:hover{
-    color: #FF914D;
-}
-
-#footer_subscribe{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-#footer_subscribe p{
-    color: #FFFFFF;
-}
-
-#input_group{
-    display: flex;
-    align-items: center;
-    background-color: #004a29;
-    border-radius: 4px;
-}
-
-#input_group input{
-    all: unset;
-    padding: 0.75rem;
-    width: 100%;
-}
-
-#input_group button{
-    background-color:#FF914D;
-    border: none;
-    color: #FFFFFF;
-    padding: 0px 1.25rem;
-    font-size: 1.125rem;
-    height: 100%;
-    border-radius: 0px 4px 4px 0px;
-    cursor: pointer;
-    transition: all 0.4s;
-}
-
-#input_group button:hover{
-    opacity: 0.8;
-}
-
-#footer_copyright{
-    display: flex;
-    justify-content: center;
-    background-color: #FF914D;
-    font-size: 0.9rem;
-    padding: 1.5rem;
-    font-weight: 100;
-}
-
-@media screen and (max-widht: 768px){
-    #footer_content{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-}
-
-@media screen and (max-widht: 426px){
-    #footer_content{
-        grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 2rem;
-    }
-}
-
-/*Style Login*/
-.input-group-login{
-    padding: 16px 0;
-}
-
-.option-register{
-    margin-top: 20px;
-}
-
-.option-register p{
-    font-size: 14px;
-}
-
-.option-register p a{
-    color: #FF914D;
-    font-weight: 500;
-}
