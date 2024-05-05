@@ -217,6 +217,7 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
     margin-top: 20px;   
+    
 }
 
 .education-link{
@@ -273,7 +274,7 @@ main{
 }
 
 footer{
-    margin-top: auto;
+    margin-top: 30px;
     background-color:#12623e;
     width: 100%;
     color: #FFFFFF;
@@ -578,6 +579,7 @@ footer{
 
 /*Style Cadastro e Login*/
 .register-login{
+    background-color: #004a29;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -618,6 +620,7 @@ footer{
 
 .logo-register-login{
     position: absolute;
+    margin-top: 40px;
     top: 8px;
     left: 50%;
     transform: translate(-50%, 0);
@@ -629,6 +632,7 @@ footer{
 }
 
 .form-header{
+    margin-top: 70px;
     margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
