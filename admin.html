@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Eco Market</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <section class="logo_header">
+            <a href="index.html">
+                <h1>Eco Market</h1>
+            </a>
+        </section>
+        <nav class="nagivation_header" id="nav">
+            <a href="index.html#products">Produtos</a>
+            <a href="index.html#review">Avaliações</a>
+            <a href="index.html#education">Educação</a>
+        </nav>
+    </header>
+    <main id="admin">
+        <header class="admin-header">
+            <h1 class="admin-title">Administração</h1>
+        </header>
+        <section class="sections">
+            <section class="admin-section">
+                <form id="user-form">
+                    <article class="input-box-admin">
+                        <label for="username">Nome do Usuário</label>
+                        <input type="text" id="username" name="username" required placeholder="Nome de usuário">
+                    </article>
+                    <article class="input-box-admin">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </article>
+                </form>
+                <section class="admin-button">
+                    <button class="submit-button" type="submit">Cadastrar</button>
+                    <button type="button" id="clear-form">Limpar</button>
+                </section>
+            </section>
+            <section class="admin-section">
+                <header class="users-header">
+                    <h2>Usuários Cadastrados</h2>
+                </header>
+                <section class="users-section">
+                    <input type="text" id="search" placeholder="Pesquisar">
+                    <button id="clear-all">Excluir Todos</button>
+                </section>
+                <section class="users-list">
+                    <ul id="user-list"></ul>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section id="footer_content" class="footer_content">
+            <section id="footer_contacts">
+                <h2>Eco Market</h2>
+                <p>Sua escolha mais sustentável.</p>
+                <section id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </section>
+            </section>
+            <section id="footer_products">
+                <ul class="footer-list">
+                    <li>
+                        <h3>Produtos</h3>
+                    </li>
+                    <li>
+                        <a href="verduras.html" class="footer-link">Verduras</a>
+                    </li>
+                    <li>
+                        <a href="legumes.html" class="footer-link">Legumes</a>
+                    </li>
+                    <li>
+                        <a href="condimentos.html" class="footer-link">Condimentos</a>
+                    </li>
+                    <li>
+                        <a href="frutas.html" class="footer-link">Frutas</a>
+                    </li>
+                    <li>
+                        <a href="extras.html" class="footer-link">Extras</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="footer_info">
+                <ul class="footer-list">
+                    <li>
+                        <h3>Saiba mais</h3>
+                    </li>
+                    <li>
+                        <a href="index.html#review" class="footer-link">Avaliações</a>
+                    </li>
+                    <li>
+                        <a href="index.html#education" class="footer-link">Educação</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="footer_subscribe">
+                <h3>Inscrever-se</h3>
+                <p>
+                    Insira seu e-mail para receber notificações sobre nossas novas soluções.
+                </p>
+                <section id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </section>
+            </section>
+        </section>
+        <section id="footer_copyright">
+            &#169
+            2024 all rights reserved.
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

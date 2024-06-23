@@ -1088,6 +1088,198 @@ input[type="radio"]{
 
 
 
+/*Style Admin*/
+.admin-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-title{
+    display: flex;
+    padding: 100px 80px 20px 80px;
+    color: #214C39;
+    font-weight: 600;
+    font-size: 30px;    
+}
+
+.sections{
+    display: flex;
+    margin-left: 50px;
+}
+
+.admin-section{
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .212);
+}
+
+.input-box-admin{
+    margin-bottom: 5px;
+}
+
+.input-box-admin input{
+    margin: 10px 0;
+    width: 100%;
+    padding: 15px 22px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box-admin input:hover{
+    background-color: #eeeeee75;
+}
+
+.input-box-admin input:focus-visible{
+    outline: 1.5px solid #FF914D;
+}
+
+.input-box-admin label{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.input-box-admin input::placeholder{
+    color: #000000be;
+}
+
+.admin-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-button button{
+    width: 120px;
+    height: 40px;
+    margin-top: 40px;
+    border: none;
+    background-color: #FF914D;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.admin-button button:hover{
+    background-color: #ff914dc5;
+}
+
+.submit-button{
+    margin-right: 30px;
+}
+
+.users-header{
+    margin-bottom: 20px;
+}
+
+.users-header h2{
+    font-size: 16px;
+    color: #214C39;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.users-section{
+    display: flex;
+    align-items: center;
+}
+
+.users-section input{
+    margin: 10px 0;
+    padding: 15px 22px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.users-section input:hover{
+    background-color: #eeeeee75;
+}
+
+.users-section input:focus-visible{
+    outline: 1.5px solid #FF914D;
+}
+
+.users-section button{
+    background-color: #FF914D;
+    border: none;   
+    border-radius: 20px; 
+    width: 120px;
+    height: 40px;
+    margin-left: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.users-section button:hover{
+    background-color: #ff914dc5;
+}
+
+.users-list{
+    max-height: 100px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+ul#user-list {
+    list-style-type: none; 
+    padding: 10px; 
+}
+
+ul#user-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.users-list::-webkit-scrollbar {
+    width: 10px; 
+}
+.users-list::-webkit-scrollbar-thumb {
+    background-color: #FF914D; 
+    border-radius: 5px; 
+}
+.users-list::-webkit-scrollbar-track {
+    background-color: #f0f0f0; 
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    color: #FF914D;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.delete-button:hover {
+    color: #ff914dc5;
+}
+
+
+
+
+
+
 
 
 
