@@ -17,7 +17,7 @@ EcoMarket é uma aplicação dedicada a promover o consumo consciente e a produ�
 - **Avaliações e Comentários Sustentáveis:**
    - Permitir que os usuários avaliem e comentem sobre a experiência na plataforma, ajudando-nos a melhorar e aprimorar nossos serviços para promover um consumo mais consciente e sustentável. 
 
-### Desenvolvedoras
+### Desenvolvedora
 
 - **Jhennifer Andrade** 💻
 
